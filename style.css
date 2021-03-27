@@ -1,0 +1,10 @@
+body {
+    background-image: url(space-2.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+    font-family: 'Teko', sans-serif;
+}
+
+p {
+    font-size: larger;
+}

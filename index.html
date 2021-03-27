@@ -7,14 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Planets</title>
 </head>
 
 <body>
+    <header></header>
 
 
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="planet" class="col">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Tatooine</a>
+                            <a class="dropdown-item" href="#">Hoth</a>
+                            <a class="dropdown-item" href="#">Death Star</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-2 card d-flex text-center" id="money"></div>
+            </div>
+            <div class="row">
+                <div class="col-3 col-md-4 card d-flex justify-content-center" id="upgrades"></div>
+                <div class="col-6 col-md-4 d-flex justify-content-center">
+                    <img id="click" src="tatooine.png" width="60%" height="60%" class="img-fluid" alt="tatooine"
+                        onclick="mine()">
+                </div>
+                <div class="col-3 col-md-4 card d-flex justify-content-center" id="auto"></div>
+            </div>
+        </div>
+    </main>
 
+
+    <footer></footer>
 
     <script src="app.js"></script>
 </body>
